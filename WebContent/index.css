@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+.flex-outer {
+    height: 100%;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.flex-inner {
+    height: 100%;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+header, footer {
+    padding: 0.5em;
+    color: white;
+    background-color: #23356E;
+}
+header {
+    padding: 0;
+    margin: 0 auto;
+    height: 100px;
+    width: 100%;
+}
+nav,
+section {
+    padding: 0.5em;
+}
+nav {
+    flex: 1;
+}
+section {
+    flex: 2;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+section h1 {
+    margin: 0;
+}
+nav a.selected {
+    background-color: #CAD9E9;
+}
+button {
+    margin: 0.5em 0;
+    padding: 0.5em;
+}

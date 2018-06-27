@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+	<div class="flex-outer">
+		<header>Frank Russo's Blog Site</header>
+		<div class="flex-inner">
+			<section id="blog_container">
+			<h2>
+			These are some blogs I copied over from my old 
+			<a href="http://frank1russo.blogspot.com/">blogspot site</a>. 
+			Use the navigation on the right read my blog entries.
+			</h2>
+			</section>
+			<nav id="nav_container"></nav>
+		</div>
+		<footer>Pace University: Class CS612 Project &copy; Summer 1 2018</footer>
+	</div>
+</body>
+<!-- Load our React component. -->
+<script src="BlogLink.js"></script>
+<script src="BlogEntry.js"></script>
+<script src="App.js"></script>
+<script>
+ReactDOM.render(React.createElement(App, null, null), document.querySelector('#nav_container'));
+</script>
+</html>
